@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Billing Software </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+</head>
+<body>
+    <header class="container-fluid">
+        <h2 class="logo h1">RRR Housing</h2>
+        <nav class="navigation"  >
+        <button class="btn refresh" >Login</button> <!--refresh setup-->
+        </nav>
+    </header>
+    <div class="wrapper container-fluid" >
+        <span class="icon-close"><ion-icon name="close"></ion-icon></span>
+        <div class="form-box login container-fluid">
+            <h2>Login</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" required>
+                    <label for="email">Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" required>
+                    <label for="password">Password</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">Remember me</label>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <div class="register">
+                    <p><a href="#" class="register-link">Forgot Password?</a></p>
+                </div>
+            </form>
+        </div>
+
+        <div class="form-box register container-fluid">
+            <h2>Forgot Password?</h2>
+
+                <div class="forgot-pass"></div>
+                <p class="forgot-pass-text"><b>Please enter your registered  email ID.</b>
+                    <br>
+                    We will send a verification code to your registered email ID.</p>
+            <form action="#">
+                <div class="input-box forgot-pass-media">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" required>
+                    <label for="email">Email</label>
+                </div>
+                <button type="submit" class="btn next-link">Next</button>
+            </form>
+        </div>
+        
+        <div class="form-box otp container-fluid" >
+            <h2>OTP Verification</h2>
+
+                <div class="otp-img"></div>
+                <p class="otp-text">
+                    We have just sent a verification code to your registered email ID.</p>
+            <form action="#">
+                <div class="input-box otp-media">
+                    <input type="text" required>
+                    <label for="otp">Enter OTP here</label>
+                </div>
+                <div>
+                    <button type="submit" class="btn otp-link" onclick="refreshPage();">Verify</button>
+                </div>
+                
+                <div class="resend">
+                    <p>Didn't get the code? <a href="#" class="resend-link">Resend</a></p>
+                </div>
+            </form>
+        </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
